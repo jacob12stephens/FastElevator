@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lab1_206_02.uwaterloo.ca.fastelevator.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src= "@drawable/elevate"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/timePassed"
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Passed: "
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textSize="30sp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minutes"
+            android:text="00:"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/second"
+            android:text="00"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Elevator/s Location:"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="150dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/currentfloorlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="175dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/elevatordirectiontitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elevator/s Direction: "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="210dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/upDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="235dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrement"
+            android:background="#212121"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/AutoRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Run"
+            android:background="#212121"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increment"
+            android:background="#212121"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
